@@ -3,7 +3,7 @@ package ru.otus.empty.decorator
 class Espresso: Drink() {
 
     public fun espresso(){
-        declaration = "Espresso"
+        mDeclaration = "Espresso"
     }
 
     override fun value(): Double{
@@ -15,7 +15,7 @@ class Espresso: Drink() {
 class Cappuccino: Drink(){
 
     public fun cappuccino(){
-        declaration = "Cappuccino"
+        mDeclaration = "Cappuccino"
     }
 
     override fun value(): Double{

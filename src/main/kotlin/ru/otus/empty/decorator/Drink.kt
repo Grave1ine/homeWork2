@@ -2,12 +2,10 @@ package ru.otus.empty.decorator
 
 //базовый класс
 
-open class Drink {                                 //напиток
-
-    var declaration: String = " "                    //описанрие/название
+open class Drink(private val mDeclaration: String) {                                 //напиток
 
     open fun getDeclaration(): String {               //вернуть название
-        return declaration
+        return mDeclaration
     }
 
     open fun value(): Double{                              //вернуть цену

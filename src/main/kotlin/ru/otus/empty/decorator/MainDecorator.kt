@@ -10,4 +10,9 @@ fun main() {
     test2 = Milk(test2)
     println(test2.getDeclaration() + " " + test2.value())
 
+    val whiskeyMilk = Whiskey(Milk(Espresso()))
+    val milkWhiskey = Milk(Whiskey(Espresso()))
+
+    println("Coffee, milk then Whiskey: ${whiskeyMilk.getDeclaration()}: ${whiskeyMilk.value()}")
+    println("Coffee, whiskey, then Milk: ${milkWhiskey.getDeclaration()}: ${milkWhiskey.value()}")
 }

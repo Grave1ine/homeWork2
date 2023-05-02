@@ -15,3 +15,9 @@ class Cappuccino: Drink("Cappuccino"){
     }
 
 }
+
+class Latte: Drink("Latte"){
+    override fun value(): Double {
+        return 2.0
+    }
+}

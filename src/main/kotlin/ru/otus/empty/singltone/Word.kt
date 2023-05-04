@@ -8,3 +8,16 @@ data class Word(
         return "author = $author, composition = $composition"
     }
 }
+
+
+/*
+class Word private constructor() {
+    companion object {
+        val instance: Word by lazy {
+            Word()
+        }
+    }
+}
+
+val w = Word.instance
+*/
